@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Random Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h2>Password Random Generator</h2>
+            <form action="">
+                <div class="input-password">
+                    <input type="text" id="password" placeholder="Password" readonly>
+                </div>
+                <div class="check-password-criteria">
+                    <p>Character Length: <span id="char-length">8</span></p>
+                    <input type="range" name="range" id="range" min="4" max="20" value="8">
+                    
+                    <div>
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Include Uppercase Letters</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="lowercase" checked>
+                        <label for="lowercase">Include Lowercase Letters</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+                    
+                    <p class="results success-message">Password Strength: <span id="strength">Weak</span></p>
+                    <button type="button" id="generatePassword">Generate</button>
+                    <button type="button" id="copy-btn">Copy</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
